@@ -17,9 +17,7 @@ export const Search = () => {
     )
       .then((response) => response.json())
       .then((obj) => {
-        console.log(obj.results);
-
-        if (typeof obj.results !== "undefined") {
+          if (typeof obj.results !== "undefined") {
           setData(obj.results);
         }
       })

@@ -6,15 +6,11 @@ export const ItemListContainer = () => {
   return (
     <Nav className="me-auto">
       {listContainer.map((item) => (
-        <>
-          <Nav.Link
-            key={item.id}
-            href={item.link}
-            className="text-light"
-          >
-            {item.name} 
+        <div key={item.id}>
+          <Nav.Link href={item.link} className="text-light">
+            {item.name}
           </Nav.Link>
-        </>
+        </div>
       ))}
     </Nav>
   );
